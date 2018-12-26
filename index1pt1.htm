@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>REI</title>
+        <meta name="description" content="">
+		
+		<!--CUSTOM CSS-->
+		<link rel="stylesheet" href="2019_preference_centerSLIM.css">
+
+		<!--ROBOTO FONTS GOOGLE-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+		<script src="https://static.cdn.responsys.net/i5/responsysimages/content/rei/jquery.validate.js" type="text/javascript"></script>
+		<script src="https://static.cdn.responsys.net/i5/responsysimages/content/rei/jquery.colorbox-min.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+				 function myFormCommands() {
+				 if(document.prefForm.EMAIL_ORIG.value.toLowerCase() != document.prefForm.EMAIL_NEW.value.toLowerCase())
+				  document.prefForm.emailChangedFlag.value = 0;
+				 }
+		</script>
+
+    </head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div id="headerContainer" style="background-color:#000000;">
+		$document(https://static.cdn.responsys.net/i5/responsysimages/content/rei/2018_PrefCenter-0.Header-original.htm)$
+		</div>  <!--END HEADER-->
+
+		<div id="wrapper">
+			<div id="container">
+				<form action="sign-in-approval.html" method="post" id="signInForm" name="signInForm">
+
+					<div id="main">
+						<div id="login">
+
+							<section class="update">
+								<div class="header" id="header">
+									Update your email preferences
+								</div>
+
+								<div class="loginBody">
+                                    <p>Looking to change your email address or the type of emails you receive? You&rsquo;ve come to the right place.</p>
+									<p>First up, enter your email address.</p>
+								</div>
+								<div class="loginEmail">
+									<label for="EmailAddress">Email address</label><br />
+									<input maxlength="50" name="email_address_" tabindex="1" class="field" type="text" id="email_address_" value="$lookup(EMAIL_ADDRESS_)$" placeholder="Email" />
+								</div>
+								<div class="confEmail"> 
+									<label for="ConfEmail">Confirm email address</label><br />
+									<input maxlength="50" name="ConfEmail" id="ConfEmail" value="" tabindex="2" class="field field2" type="text" placeholder="Email" />
+								</div>
+								<div id="signInErrorDiv"></div>
+								<p class="click">When you click submit, we&rsquo;ll send you a link to a secure page where you can update your settings.</p>
+								<input type="submit" name="submit" value="Submit" class="submit" />
+								<p id="policyP">
+									<a href="http://www.rei.com/help/privacy-policy.html?cm_mmc=email_com_prefs-_-login-_-body-_-bt_privacy" class="policy">See our Privacy Policy</a>
+								</p>
+							</section>
+						</div>
+					</div> <!--END MAIN-->
+				</form>
+			</div>
+		</div>
+
+        <div id="footerContainer" style="background-color:#000000;"> $DOCUMENT(https://static.cdn.responsys.net/i5/responsysimages/content/rei/2018_PrefCenter-0.Footer.htm)$
+		</div>  <!--END FOOTER-->
+
+	</body>
+</html>
+

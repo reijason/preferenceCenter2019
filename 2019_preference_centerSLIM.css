@@ -1,0 +1,243 @@
+/*GLOBAL RESETS*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*FONT STYLES*/
+
+/*HEADER STYLES*/
+.header, #header {
+	font-family: Roboto Slab;
+	font-size: 54px;
+	line-height: 67px;
+	font-weight: bold;
+	padding-top: 4px;
+	width: 100%;
+	max-width: 1440px;
+	display: block;
+	margin-top: 65px;
+    margin-bottom: 20px;
+	text-align: left;
+}
+
+@media only screen and (max-width:767px){
+	.header, #header{
+		font-size: 35px;
+		line-height: 38px;
+	}
+}
+
+/*BODY COPY STYLES*/
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	line-height: 22px;		
+}
+
+@media only screen and (max-width:767px){
+	p{
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+p a, a{
+    text-decoration: none;
+    color: #0066cc;
+}
+p a:hover, a:hover{
+    text-decoration: underline;
+}
+
+/*LOGIN PAGE*/
+#signInForm{
+	width: 100%;
+	max-width: 1440px;
+	display: block;
+	margin: 0 auto;
+	min-height: 300px;
+	box-sizing: border-box;
+}
+#login {
+	width:100%;
+	max-width: 1300px;
+	margin: 65px auto;
+}
+#loginHeader, #loginBody{
+	width: 100%;
+	max-width: 1440px;
+	display: block;
+	margin: 0 auto;
+}
+#login .update {
+	padding-left:30px;
+	padding-right: 30px;
+	margin: 0 auto;
+}
+#login .update .label {
+	margin-top: 3px;
+	margin-bottom: 2px;
+	font-family: Roboto Condensed;
+	font-size: 18px;
+	font-weight: bold;
+}
+#login input[type=text] {
+	width:90%;
+	max-width: 511px;
+	margin: 8px 0 24px 0;
+	padding: 10px 17px;
+}
+#login .update .submit{
+	width:121px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	-webkit-appearance: none; /* don't show mobile Safari native Apple UI control */
+	display:block;
+	font-family: Roboto Condensed;
+	font-size: 20px;
+	font-weight: bold;
+	color:#000000;
+	background-color:#4eaaff;
+	margin-bottom: 30px;
+}
+#login p.click {
+	padding:2px 0 15px 0 !important;
+}
+#login .update p#policyP{
+	margin-bottom: 20px;
+}
+#login .submit{
+	margin-top: 7px;	
+}
+#login label {
+	font-family: Roboto Condensed;
+	font-size: 18px;
+	font-weight: bold;
+}
+#login a {
+	font-weight: bold;
+}
+::-webkit-input-placeholder {
+	color: #777777;
+	font-style:italic;
+}
+:-moz-placeholder { /* older Firefox*/
+	color: #777777;
+	font-style:italic;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+	color: #777777;
+	font-style:italic;
+} 
+:-ms-input-placeholder { 
+	color: #777777;
+	font-style:italic;
+}
+
+/* ################################ */
+/*EXISTING EMAIL PAGE*/
+div#exist{
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 100%;
+	max-width: 1300px;
+	display: block;
+	margin: 0 auto;
+	min-height: 300px;
+	box-sizing: border-box;
+}
+div#exist p.bold{
+	font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 57px;
+}
+
+/* ################################ */
+/*YOU'RE ALL SET PAGE*/
+div#main{
+    display: block;
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+div#ecoa{
+    margin:0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    min-height: 480px;
+}
+
+@media screen and (max-width:800px){
+  div#ecoa{
+    padding: 0;
+    height: auto;
+    min-height: 580px;
+  }
+}
+
+div#ecoa a.bold{
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0066cc;
+}
+div#ecoa a.bold:hover{
+    text-decoration: underline;
+}
+div#ecoa div.social #socialHeader {
+    font-family: Roboto Condensed;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+#ecoa .social ul {
+	margin:0;
+	padding-left: 0;
+}
+#ecoa .social li{
+	display:inline-block;
+	float: left;
+}
+#ecoa .social .twit, #ecoa .social .fb, #ecoa .social .pin, #ecoa .social .yt, #ecoa .social .ig{
+    width:41px;
+    height: auto;
+    padding: 11px 30px 0 0;	
+}
+#ecoa .social{
+	padding-top: 65px;	
+}
+
+@media screen and (max-width: 800px){
+    #ecoa .social .twit, #ecoa .social .fb, #ecoa .social .pin, #ecoa .social .yt, #ecoa .social .ig{
+        width:27px;
+        height: auto;
+        padding: 11px 15px 0 0;
+    }
+	#ecoa .social .ig{
+		padding-right: 0;
+	}
+}
+
+/* ################################ */
+/*LET'S TRY ANOTHER EMAIL (NO EXISTING) PAGE*/
+div#noexist{
+    height: auto;
+    min-height: 380px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
